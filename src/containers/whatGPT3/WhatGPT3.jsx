@@ -12,7 +12,7 @@ const WhatGPT3 = () => (
       <p>Explore the Library</p>
     </div>
     <div className="gpt3__whatgpt3-container">
-      <Feature title="Problem-solving" text="We so opinion friends me message as delight. Whole front do of plate heard oh ought." />
+      <Feature title="Problem-solving" text="Weekly presentations from exclusive MIT Curriculum on valuable topics such as Selecting a Problem, Branding, Mockups User Testing, and More!" />
       <Feature title="Maintanence" text="Learn how to maintain and grow the compan" />
       <Feature title="Awards" text="Pitch your business to judges to win prestigious awards" />
     </div>
