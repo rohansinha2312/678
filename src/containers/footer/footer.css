@@ -7,6 +7,13 @@
     background: var(--color-footer);
 }
 
+.header {
+    color: #fff;
+    font-size: 35;
+    font-family: Helvetica, sans-serif;
+    font-weight: 500;
+}
+
 .gpt3__footer-heading {
     width: 100%;
     text-align: center;
