@@ -40,7 +40,9 @@ const Footer = () => (
     </div>
 
     <div className="gpt3__footer-copyright">
-      <p>@2022 XSTEM All rights reserved.</p>
+      <p>
+        <a href="https://mahitm.com" target="_blank" rel="noreferrer noopener">@</a>
+        2022 XSTEM All rights reserved.</p>
     </div>
   </div>
 );
