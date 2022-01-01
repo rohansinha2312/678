@@ -1,6 +1,6 @@
 import React from 'react';
 import Article from '../../components/article/Article';
-import { blog01, blog02, blog03, blog04, blog05 } from './imports';
+import { blog01, blog02, blog03, blog04, blog05} from './imports';
 import './blog.css';
 
 const Blog = () => (
@@ -18,9 +18,9 @@ const Blog = () => (
         <Article href="https://www.nfte.com/fall-2021-nfte-world-series-of-innovation/" imgUrl={blog04} date="Dec 15, 2022" text="NFTE World Series of Innovation" />
         <Article href="https://www.projectparadigm.org/#" imgUrl={blog05} date="May 1, 2022" text="Paradigm Challenge (age restriction)" />
         <Article href="https://technovationchallenge.org/get-started/" imgUrl={blog05} date="Mar 25, 2022" text="Technovation Challange (Girls Only)" />
-        <Article href="https://www.cooperhewitt.org/national-design-awards/national-design-awards-submission-guidelines/#:~:text=Submission%20Deadline,11%3A59%20p.m.%20Eastern%20Time." imgUrl={blog05} date="Feb 22, 2022" text="Cooper Hewitt" />
-        <Article href="https://www.google.com/url?q=https://diamondchallenge.org/summit/&sa=D&source=editors&ust=1641028739470951&usg=AOvVaw3ll6klLUQRTiC0rbYIyW0R" imgUrl={blog05} date="Jan 17, 2022" text="Diamond Challenge" />
-        <Article href="https://www.businessbootcamp101.org/pitchnj-1" imgUrl={blog05} date="Jan 1, 2022" text="Pitch NJ" />
+        <Article href="https://www.cooperhewitt.org/national-design-awards/national-design-awards-submission-guidelines/#:~:text=Submission%20Deadline,11%3A59%20p.m.%20Eastern%20Time." imgUrl={blog02} date="Feb 22, 2022" text="Cooper Hewitt" />
+        <Article href="https://www.google.com/url?q=https://diamondchallenge.org/summit/&sa=D&source=editors&ust=1641028739470951&usg=AOvVaw3ll6klLUQRTiC0rbYIyW0R" imgUrl={blog03} date="Jan 17, 2022" text="Diamond Challenge" />
+        <Article href="https://www.businessbootcamp101.org/pitchnj-1" imgUrl={blog04} date="Jan 1, 2022" text="Pitch NJ" />
       </div>
     </div>
   </div>
