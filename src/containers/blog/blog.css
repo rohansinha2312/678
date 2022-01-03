@@ -1,11 +1,14 @@
 .gpt3__blog {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;  
+    border-radius: 5rem;
+
 }
 
 .gpt3__blog-heading {
     width: 100%;
     text-align: left;
+    border-radius: 5rem;
 
     margin-bottom: 5rem;
 }
@@ -15,11 +18,14 @@
     line-height: 75px;
     font-family: var(--font-family);
     font-weight: 800;
+
 }
 
 .gpt3__blog-container {
     display: flex;
     flex-direction: row;
+    border-radius: 5rem;
+   
 }
 
 .gpt3__blog-container_groupA {
@@ -28,44 +34,61 @@
 }
 
 .gpt3__blog-container_groupB {
+
     flex: 1;
 
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
+    border-radius: 5rem;
+
 }
 
 @media screen and (max-width: 990px) {
     .gpt3__blog-container {
         flex-direction: column-reverse;
+        border-radius: 5rem;
+
+
     }
 
 
     .gpt3__blog-container_groupA {
         margin: 2rem 0;
+        border-radius: 5rem;
+
     }
 
     .gpt3__blog-container_groupA .gpt3__blog-container_article  {
        width: 48%;
+       border-radius: 5rem;
+
     }
 
     .gpt3__blog-container_groupA .gpt3__blog-container_article-image {
         height: 250px;
+        border-radius: 5rem;
+
     }
 }
 
 @media screen and (max-width: 700px) {
     .gpt3__blog-container_groupB {
         grid-template-columns: repeat(1, 1fr);
+        border-radius: 5rem;
+
     }
 
     .gpt3__blog-container_groupA .gpt3__blog-container_article  {
        width: 100%;
+       border-radius: 5rem;
+
     }
 
     .gpt3__blog-heading h1 {
         font-size: 46px;
         line-height: 52px;
+
     }
 }
 
@@ -73,6 +96,7 @@
     .gpt3__blog-heading h1 {
         font-size: 34px;
         line-height: 42px;
+
     }
 
 }
