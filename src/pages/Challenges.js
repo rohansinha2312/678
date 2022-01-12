@@ -1,10 +1,22 @@
 import React from 'react';
-import Article from '../../components/article/Article';
-import { blog02, blog03, blog04, blog05, blog06, blog07, blog08, blog09} from './imports';
-import './blog.css';
+import Navbar from '../components/navbar/Navbar';
+import Footer from '../containers/footer/Footer';
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import Article from '../components/article/Article';
+import { blog02, blog03, blog04, blog05, blog06, blog07, blog08, blog09} from '../containers/blog/imports';
+import '../containers/blog/blog.css';
 
-const Blog = () => (
-  <div className="gpt3__blog section__padding" id="blog">
+function Challenges() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return (
+    <div>
+      <Navbar />
+      <div className="gpt3__blog section__padding" id="blog">
     <div className="gpt3__blog-heading">
       <h1 className="gradient__text">Here are, <br /> our challenges.</h1>
     </div>
@@ -24,6 +36,9 @@ const Blog = () => (
       </div>
     </div>
   </div>
-);
+      <Footer />
+    </div>
+  )
+}
 
-export default Blog;
+export default Challenges

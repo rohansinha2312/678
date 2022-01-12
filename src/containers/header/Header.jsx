@@ -1,5 +1,4 @@
 import React from 'react';
-
 import ai from '../../assets/ai.png';
 import './header.css';
 
@@ -13,12 +12,14 @@ const Header = () => (
     </div>
 
     <div className="gpt3__header-image">
+      
+      
       <img src={ai} />
+      
     </div>
     <script src="vanilla-tilt.min.js"></script>
 
   </div>
   
 );
-
 export default Header;

@@ -1,5 +1,7 @@
 import React from 'react';
 import './footer.css';
+import { Link } from "react-router-dom";
+
 
 const Footer = () => (
   <div className="gpt3__footer section__padding">
@@ -11,19 +13,15 @@ const Footer = () => (
         <p className="header">XSTEM</p>
       </div>
       <div className="gpt3__footer-links_div">
-      <p><a href="#home">Home</a></p>
-          <p><a href="#wgpt3">About</a></p>
-          <p><a href="#possibility">Club</a></p>
-          <p><a href="#features">Work</a></p>
-          <p><a href="#blog">Challenges</a></p>
+      <p><Link to="/" style={{ color: '#FFF' }}> Home </Link></p>
+          <p><Link to="/about" style={{ color: '#FFF' }}> About </Link></p>
+          <p><Link to="/work" style={{ color: '#FFF' }}> Work </Link></p>
+          <p><Link to="/pedagogy" style={{ color: '#FFF' }}> Pedagogy </Link></p>
+          <p><Link to="/challenges" style={{ color: '#FFF' }}> Challenges </Link></p>
+          <p><Link to="/gallery" style={{ color: '#FFF' }}> Gallery </Link></p>
+
           <p>
-            <a 
-              rel="noreferrer noopener" 
-              target="_blank" 
-              href="https://docs.google.com/document/d/17rIfdVM2UBkeNNcickJoBA93nrm3aPcJtreZE4uk5PE/edit?usp=sharing"
-            >
-              Gallery
-            </a>
+          <Link to="/team"> Team </Link>
           </p>
       </div>
     </div>

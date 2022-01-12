@@ -1,8 +1,6 @@
 import React from 'react';
-
 import { Footer, Blog, Possibility, Features, WhatGPT3, Header } from './containers';
 import { CTA, Navbar } from './components';
-
 import './App.css';
 
 const App = () => (
@@ -18,6 +16,7 @@ const App = () => (
     <Blog />
     <Footer />
   </div>
+  
 );
 
 export default App;

@@ -1,6 +1,7 @@
 import React from 'react';
 import Feature from '../../components/feature/Feature';
 import './whatGPT3.css';
+import { Link } from "react-router-dom";
 
 const WhatGPT3 = () => (
   <div className="gpt3__whatgpt3 section__margin" id="wgpt3">
@@ -9,7 +10,7 @@ const WhatGPT3 = () => (
     </div>
     <div className="gpt3__whatgpt3-heading">
       <h1 className="gradient__text">The possibilities are beyond your imagination</h1>
-      <p>Explore the Library</p>
+      <p><Link to='/about' style={{color: '#e87', textDecoration: 'none'}}>Explore the Library</Link></p>
     </div>
     <div className="gpt3__whatgpt3-container">
       <Feature title="Problem-solving" text="Weekly presentations from exclusive MIT Curriculum on valuable topics such as Selecting a Problem, Branding, Mockups User Testing, and More!" />

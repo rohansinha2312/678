@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import './navbar.css';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -8,32 +9,24 @@ const Navbar = () => {
   return (
     <div className="gpt3__navbar">
       <div className="gpt3__navbar-links">
-        <div className="gpt3__navbar-links_logo">
-          <p className="header">XSTEM</p>
-        </div>
         <div className="gpt3__navbar-links_container">
-          <p><a href="#home">Home</a></p>
-          <p><a href="#wgpt3">About</a></p>
-          <p><a href="#features">Work</a></p>
-          <p><a href="#possibility">Pedagogy</a></p>
-          <p><a href="#blog">Challenges</a></p>
+        <div className="gpt3__navbar-links_logo">
+          <p><strong><Link to="/" style={{ color: '#FFF', textDecoration: 'none'}}> XSTEM </Link></strong></p>
+        </div>
+          <p>          <Link to="/" style={{ color: '#FFF', textDecoration: 'none'}}> Home </Link>
+</p>
+          <p><Link to="/about" style={{ color: '#FFF', textDecoration: 'none'}}> About </Link></p>
+          <p><Link to="/work" style={{ color: '#FFF', textDecoration: 'none'}}> Work </Link></p>
+          <p><Link to="/pedagogy" style={{ color: '#FFF', textDecoration: 'none'}}> Pedagogy </Link></p>
+          <p><Link to="/challenges" style={{ color: '#FFF', textDecoration: 'none'}}> Challenges </Link></p>
           <p>
-            <a 
-              rel="noreferrer noopener" 
-              target="_blank" 
-              href="https://docs.google.com/document/d/17rIfdVM2UBkeNNcickJoBA93nrm3aPcJtreZE4uk5PE/edit?usp=sharing"
-            >
-              Gallery
-            </a>
+          <Link to="/gallery" style={{ color: '#FFF', textDecoration: 'none'}}> Gallery </Link>
           </p>
           <p>
-            <a 
-              rel="noreferrer noopener" 
-              target="_blank" 
-              href="https://docs.google.com/document/d/1xCvlhsnOTkhDF45fyjh04gAlQS3I2STGwxTsImYC9eY/edit?usp=sharing"
-            >
-              Team
-            </a>
+          <Link to="/team" style={{ color: '#FFF', textDecoration: 'none'}}> Team </Link>
+          </p>
+          <p>
+          <Link to="/resources" style={{ color: '#FFF', textDecoration: 'none'}}> Resources </Link>
           </p>
         </div>
       </div>
@@ -44,34 +37,19 @@ const Navbar = () => {
         {toggleMenu && (
         <div className="gpt3__navbar-menu_container scale-up-center">
           <div className="gpt3__navbar-menu_container-links">
-          <p><a href="#home">Home</a></p>
-          <p><a href="#wgpt3">About</a></p>
-          <p><a href="#features">Work</a></p>
-          <p><a href="#possibility">Pedagogy</a></p>
-          <p><a href="#blog">Challenges</a></p>
+          <p> <Link to="/" style={{ color: '#FFF'}}> Home </Link></p>
+          <p><Link to="/about" style={{ color: '#FFF', textDecoration: 'none'}}> About </Link></p>
+          <p><Link to="/work" style={{ color: '#FFF', textDecoration: 'none'}}> Work </Link></p>
+          <p><Link to="/pedagogy" style={{ color: '#FFF', textDecoration: 'none'}}> Pedagogy </Link></p>
+          <p><Link to="/challenges" style={{ color: '#FFF', textDecoration: 'none'}}> Challenges </Link></p>
           <p>
-            <a 
-              rel="noreferrer noopener" 
-              target="_blank" 
-              href="https://docs.google.com/document/d/17rIfdVM2UBkeNNcickJoBA93nrm3aPcJtreZE4uk5PE/edit?usp=sharing"
-            >
-              Gallery
-            </a>
+          <Link to="/gallery" style={{ color: '#FFF', textDecoration: 'none'}}> Gallery </Link>
           </p>
           <p>
-            <a 
-              rel="noreferrer noopener" 
-              target="_blank" 
-              href="https://docs.google.com/document/d/1xCvlhsnOTkhDF45fyjh04gAlQS3I2STGwxTsImYC9eY/edit?usp=sharing"
-            >
-              Team
-            </a>
+          <Link to="/team" style={{ color: '#FFF', textDecoration: 'none'}}> Team </Link>
           </p>
           </div>
-          <div className="gpt3__navbar-menu_container-links-sign">
-            <p>Sign in</p>
-            <button type="button">Sign up</button>
-          </div>
+          
         </div>
         )}
       </div>
