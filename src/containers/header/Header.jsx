@@ -14,7 +14,7 @@ const Header = () => (
     <div className="gpt3__header-image">
       
       
-      <img src={ai} />
+      <img src={ai} alt="not loaded"/>
       
     </div>
     <script src="vanilla-tilt.min.js"></script>

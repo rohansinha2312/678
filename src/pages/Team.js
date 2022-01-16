@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from './components/navbar/Navbar';
-import Footer from './containers/footer/Footer';
+import Navbar from '../components/navbar/Navbar';
+import Footer from '../containers/footer/Footer';
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Teamsupplier from './Teamsupplier';

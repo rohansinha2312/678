@@ -1,18 +1,18 @@
 import React,{useState} from 'react'
-import Img1 from './assets/img1.jpeg';
-import Img2 from './assets/img2.png';
-import Img3 from './assets/img3.jpeg';
-import Img4 from './assets/img4.jpeg';
-import Img5 from './assets/img5.jpeg';
-import Img6 from './assets/img6.jpeg';
-import Img7 from './assets/img7.jpeg';
-import Img8 from './assets/img8.png';
-import Img9 from './assets/img9.png';
-import Img10 from './assets/img10.png';
-import Img11 from './assets/img11.jpeg';
-import Img12 from './assets/img12.jpeg';
-import Img13 from './assets/img13.jpeg';
-import Img14 from './assets/img14.jpeg';
+import Img1 from '../assets/img1.jpeg';
+import Img2 from '../assets/img2.png';
+import Img3 from '../assets/img3.jpeg';
+import Img4 from '../assets/img4.jpeg';
+import Img5 from '../assets/img5.jpeg';
+import Img6 from '../assets/img6.jpeg';
+import Img7 from '../assets/img7.jpeg';
+import Img8 from '../assets/img8.png';
+import Img9 from '../assets/img9.png';
+import Img10 from '../assets/img10.png';
+import Img11 from '../assets/img11.jpeg';
+import Img12 from '../assets/img12.jpeg';
+import Img13 from '../assets/img13.jpeg';
+import Img14 from '../assets/img14.jpeg';
 import './gallery.css';
 import CloseIcon from '@material-ui/icons/Close';
 
@@ -94,7 +94,7 @@ const Gallerysupplier = () => {
                 return(
                     
                     <div className="pics" key={index} onClick={()=>getImg(item.imgSrc)}>
-                        <img src={item.imgSrc} style={{width: '100%', WebkitBorderRadius: '15px'}}/></div>
+                        <img src={item.imgSrc} alt="" style={{width: '100%', WebkitBorderRadius: '15px'}}/></div>
                         
                     
                 )
